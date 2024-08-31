@@ -16,32 +16,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
   }
 
-  @IBAction func keyCPressed(_ sender: UIButton) {
-    playSound(keyName: "C")
-  }
-
-  @IBAction func keyEPressed(_ sender: UIButton) {
-    playSound(keyName: "E")
-  }
-
-  @IBAction func keyDPressed(_ sender: UIButton) {
-    playSound(keyName: "D")
-  }
-
-  @IBAction func keyFPressed(_ sender: UIButton) {
-    playSound(keyName: "F")
-  }
-
-  @IBAction func keyGPressed(_ sender: UIButton) {
-    playSound(keyName: "G")
-  }
-
-  @IBAction func keyAPressed(_ sender: UIButton) {
-    playSound(keyName: "A")
-  }
-
-  @IBAction func keyBPressed(_ sender: UIButton) {
-    playSound(keyName: "B")
+  @IBAction func keyPressed(_ sender: UIButton) {
+    playSound(keyName: sender.currentTitle!)
   }
 
   func playSound(keyName: String) {
